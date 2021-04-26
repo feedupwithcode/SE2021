@@ -594,8 +594,29 @@
   .newsletter-form button {
     background: var(--secondary-color);
   }
+  /*---------------------------------------
+     LOGIN              
+  -----------------------------------------*/
 
+  .login-form {
+    box-shadow: none;
+    background: var(--partner-bg);
+    border: 0;
+    padding: 1.7em 1.3em;
+    margin: 14px 0;
+  }
 
+  .login-form #login-now {
+    background: var(--primary-color);
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: var(--p-font-size);
+    line-height: 0px;
+    padding: 1.2em 1.3em;
+  }
+
+ 
 
   /*---------------------------------------
      FOOTER              
@@ -746,5 +767,7 @@
       margin-left: 0;
     }
   }
+  
+  
 
 

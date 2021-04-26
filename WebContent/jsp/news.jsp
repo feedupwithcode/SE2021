@@ -13,7 +13,7 @@
 
 	<!-- MENU BAR -->
 	<jsp:include page="../includes/menubar.inc.jsp" />
-&nbsp;
+	&nbsp;
 
 
 	<!-- news -->
@@ -132,8 +132,8 @@
 
 
 	<footer class="site-footer">
-	<jsp:include page="../includes/footer.inc.jsp" />
-&nbsp;
-		</footer>
+		<jsp:include page="../includes/footer.inc.jsp" />
+		&nbsp;
+	</footer>
 </body>
 </html>

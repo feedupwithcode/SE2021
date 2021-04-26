@@ -2,7 +2,7 @@
 <c:set var="path" value="${pageContext.servletContext.contextPath }"></c:set>
 <nav class="navbar navbar-expand-lg">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"> <i
+			<a class="navbar-brand" href='${path }/index.jsp'> <i
 				class="fa fa-line-chart"></i> Hanu Banking
 			</a>
 
