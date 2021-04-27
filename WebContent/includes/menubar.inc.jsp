@@ -20,7 +20,7 @@
 					<li class="nav-item"><a href='${path }/jsp/news.jsp'
 						class="nav-link">News</a></li>
 					<li class="nav-item"><a href='${path }/jsp/login.jsp'
-						class="nav-link"></a></li>
+						class="nav-link">Login</a></li>
 					<li class="nav-item"><a href='${path }/jsp/contact.jsp'
 						class="nav-link contact">Contact Us</a></li>
 				</ul>
