@@ -6,7 +6,7 @@
 	<session-factory>
 		<!-- <property name="connection.datasource">mysqlpool</property>
 		<property name="hibernate.jndi.class">weblogic.jndi.WLInitialContextFactory</property>
-		<property name="hibernate.jndi.url">t3://localhost:7001</property>
+		<property name="hibernate.jndi.url">t3://localhost:8001</property>
 		<property name="connection.username">weblogic</property>
 		<property name="connection.password">weblogic1</property> -->
 		
@@ -20,9 +20,9 @@
 		<!-- Echo all executed SQL to console -->
 	    <property name="show_sql">true</property>
 		
-		<mapping resource="com/nacre/bankingsystem/config/login.hbm.xml"/>
-		<mapping resource="com/nacre/bankingsystem/config/customer.hbm.xml"/>
-		<mapping resource="com/nacre/bankingsystem/config/account.hbm.xml"/>
-		<mapping resource="com/nacre/bankingsystem/config/transaction.hbm.xml"/>
+		<mapping resource="com/hanu/bankingsystem/config/login.hbm.xml"/>
+		<mapping resource="com/hanu/bankingsystem/config/customer.hbm.xml"/>
+		<mapping resource="com/hanu/bankingsystem/config/account.hbm.xml"/>
+		<mapping resource="com/hanu/bankingsystem/config/transaction.hbm.xml"/>
 	</session-factory>
 </hibernate-configuration>

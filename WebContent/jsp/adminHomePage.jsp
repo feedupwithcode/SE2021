@@ -34,6 +34,7 @@
 					role="button">Fund Transfer</a>
 				<a href="${path}../jsp/quickTranscaction.jsp" class="btn btn-outline-light  mb-4"
 					role="button">Quick view Transaction</a> 
+					
 					 
 
 

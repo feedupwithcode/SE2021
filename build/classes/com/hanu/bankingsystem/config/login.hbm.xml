@@ -4,7 +4,7 @@
 	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
   
 <hibernate-mapping>
-	<class name="com.nacre.bankingsystem.dto.LoginDTO" table="tbl_login">
+	<class name="com.hanu.bankingsystem.dto.LoginDTO" table="tbl_login">
 		<id name="loginId" />
 		<property name="loginPassword" />
 		<property name="loginType" />		

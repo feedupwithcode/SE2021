@@ -2,7 +2,7 @@
 <c:set var="path" value="${pageContext.servletContext.contextPath }"></c:set>
 <nav class="navbar navbar-expand-lg">
 	<div class="container">
-		<a class="navbar-brand" href='${path }/index.jsp'> <i
+		<a class="navbar-brand" href='${path}/index.jsp'> <i
 			class="fa fa-line-chart"></i> Hanu Banking
 		</a>
 
@@ -16,7 +16,7 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item text-center"><a href="${path}/jsp/adminHomePage.jsp"
-					class="nav-link">My Account</a></li>
+					class="nav-link ">My Account</a></li>
 				<li class="nav-item"><a href="${path}/jsp/openAccount.jsp"
 					class="nav-link text-center">Create New Account</a></li>
 				<li class="nav-item"><a href="${path}/jsp/accountDetails.jsp"
@@ -29,6 +29,8 @@
 					class="nav-link text-center">Fund Transfer</a></li>
 				<li class="nav-item"><a href="${path}/jsp/quickTranscaction.jsp"
 					class="nav-link text-center">View Quick Transaction</a></li>
+					<li class="nav-item"><a href='${path }/index.jsp'
+					class="nav-link text-center contact">Logout</a></li>
 			</ul>
 		</div>
 	</div>

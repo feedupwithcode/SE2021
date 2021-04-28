@@ -16,13 +16,15 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href='${path }/index.jsp'
-						class="nav-link">Home</a></li>
+						class="nav-link">My Account</a></li>
 					<li class="nav-item"><a href='${path }/jsp/news.jsp'
-						class="nav-link">News</a></li>
+						class="nav-link">Quick Transaction</a></li>
 					<li class="nav-item"><a href='${path }/jsp/login.jsp'
-						class="nav-link">Login</a></li>
+						class="nav-link">Fund Transfer</a></li>
 					<li class="nav-item"><a href='${path }/jsp/contact.jsp'
-						class="nav-link contact">Contact Us</a></li>
+						class="nav-link ">Change Security Information</a></li>
+					<li class="nav-item"><a href='${path }/index.jsp'
+						class="nav-link contact">Log out</a></li>
 				</ul>
 			</div>
 		</div>
