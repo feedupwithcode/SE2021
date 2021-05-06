@@ -7,7 +7,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link rel="stylesheet" type="text/css" href="../css/common.css" />
-	<title>Fund Transfer | Hanu Online Bank</title>
+	<title>Fund Transfer | FIT Online Bank</title>
 	<script src="${path }/jquery/jquery-1.9.0.min.js" type="text/javascript"charset="utf-8"></script>
 	<script type="text/javascript">
 	function eraseError(id){
@@ -109,24 +109,19 @@
 	            </div>
 	            <jsp:include page="../includes/message.inc.jsp" />
            </div>
-            <section class="section-padding">
-		<div class="MainBody">
-			<div
-				class="col-lg-12 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center contact-form">
-				<h2 class="mb-4">
-					<strong>Fund Transfer</strong>
-				</h2>       
+           <div class="MainBody">           
+           		<div class="LeftContainer" id="leftContainer"><h2 Style="color:darkblue">Fund Transfer</h2>
            			<table >
-           				<tr><td><h4>Source Account Number</h4></td></tr>
-           				<tr><td><input class ="form-control" type="text" id="sourceAccountNo" name="sourceAccountNo" maxlength="16" onkeyup="eraseError(this)" /></td>
+           				<tr><td style="color:blue;font-size:18px;">Source Account Number</td></tr>
+           				<tr><td><input type="text" id="sourceAccountNo" name="sourceAccountNo" maxlength="16" onkeyup="eraseError(this)" style="padding:1px 3px;font-size:18px;width:200px;color:darkblue;" /></td>
            					<td id="tdSourceAccountNo" style="color:red"><span id="checkAno" onclick="checkAccountNo()">Check</span></td>
            				</tr>
-           				<tr><td><h4>Target Account Number</h4></td></tr>
-           				<tr><td><input class ="form-control" type="text" id="targetAccountNo" name="targetAccountNo" maxlength="16" onkeyup="eraseError(this)" /></td>
+           				<tr><td style="color:blue;font-size:18px;">Target Account Number</td></tr>
+           				<tr><td><input type="text" id="targetAccountNo" name="targetAccountNo" maxlength="16" onkeyup="eraseError(this)" style="padding:1px 3px;font-size:18px;width:200px;color:darkblue;" /></td>
            					<td id="tdTargetAccountNo" style="color:red"></td>
            				</tr>
-           				<tr><td><h4>Amount to be transfered</h4></td></tr>
-           				<tr><td><input class="form-control" type="text" id="transferAmount" name="transferAmount" onkeyup="eraseError(this)" /></td>
+           				<tr><td style="color:blue;font-size:18px;">Amount to be transfered</td></tr>
+           				<tr><td><input type="text" id="transferAmount" name="transferAmount" onkeyup="eraseError(this)" style="padding:1px 3px;font-size:18px;width:200px;color:blue;" /></td>
            					<td id="tdTransferAmount" style="color:red"></td>
            				</tr>
            			</table>
@@ -136,9 +131,9 @@
            		</div>
            </div>
 	</div>
-<footer class="site-footer">
-					<jsp:include page="../includes/footer.inc.jsp" />
-					&nbsp;
-				</footer>
+	<div id="footer" class="Footer">
+            <%@include  file="../includes/footer.inc.jsp" %>
+            &nbsp;
+    </div>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link rel="stylesheet" type="text/css" href="${path }/css/common.css" />
-	<title>Account Details | Hanu Banking</title>
+	<title>Account Details | FIT Online Banking</title>
 	
 	<style>
 	.PhotographContainer{
@@ -126,26 +126,25 @@
 			<div class="MenuContainer">
 				<jsp:include page="../includes/adminMenu.inc.jsp" />
 			</div>
-<%-- 			<jsp:include page="../includes/message.inc.jsp" />
- --%>		</div>
- <section  class="section-padding">
- 
-		<div
-			class="col-lg-12 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center contact-form">
-			<h2 class="mb-4"><strong>View Account Detail</strong></h2>
+			<jsp:include page="../includes/message.inc.jsp" />
+		</div>
 		<div class="MainBody">
 			<form action="/AccountDetails" method="post">
+				
 				<div id="leftContainer" class="LeftContainer">
+					<h2 Style="color: darkblue">View Account Details</h2>
 					<table>
 						<tr>
-							<td><h4>Account Number</h4></td>
+							<td style="color: blue; font-size: 18px;">Account Number</td>
 						</tr>
 						<tr>
-							<td><input  class ="form-control" type="text" id="accountNo" name="accountNo" maxlength="16" onkeyup="eraseError(this)"/></td>
+							<td><input type="text" id="accountNo" name="accountNo" maxlength="16" onkeyup="eraseError(this)"
+								style="padding: 1px 3px; font-size: 18px; width: 200px; color: darkblue;" /></td>
 							<td id="tdAccountNo" style="color:red"><span id="checkAno" onclick="checkAccountNo()">Check</span></td>
 						</tr>
 					</table>
-					<input type="button" id='buttonId' value="Show Details"/>
+					<input type="button" id='buttonId' value="Show Details"
+						style="padding: 3px; width: 120px; margin-left: 3px;" />
 				</div>
 				<div id="rightContainer" class="RightContainer">
 				</div>
@@ -153,8 +152,9 @@
 			</form>
 		</div>
 	</div>
-	</section>
-	<footer class="site-footer"> <jsp:include
-	page="../includes/footer.inc.jsp" /> &nbsp; </footer>
+	<div id="footer" class="Footer">
+		<%@include file="../includes/footer.inc.jsp"%>
+		&nbsp;
+	</div>
 </body>
 </html>

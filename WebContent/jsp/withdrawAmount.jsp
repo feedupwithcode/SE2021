@@ -7,7 +7,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<link rel="stylesheet" type="text/css" href="../css/common.css" />
-	<title>Withdraw Amount | Hanu Online Banking</title>
+	<title>Withdraw Amount | FIT Online Banking</title>
 	<script src="../jquery/jquery-1.9.0.min.js" type="text/javascript"></script>  
 	<script>
 		$(document).ready(function(){
@@ -103,22 +103,16 @@
 	            </div>
 	            <jsp:include page="../includes/message.inc.jsp" />
            </div>
-           <section class="section-padding">
-		<div class="MainBody">
-			<div
-				class="col-lg-12 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center contact-form">
-				<h2 class="mb-4">
-					<strong>Withdraw Amount</strong>
-				</h2>       
+           <div class="MainBody">         
            		<form action="/WithdrawServlet" method="post">
-           		<div class="LeftContainer" id="leftContainer">
+           		<div class="LeftContainer" id="leftContainer"><h2 Style="color:darkblue">Withdraw Amount</h2>
            			<table >
-           				<tr><td><h4>Account Number</h4></td></tr>
-           				<tr><td><input class ="form-control" type="text" id="accountNo" name="accountNo" onkeyup="eraseError(this)" maxlength="16" style="padding:1px 3px;font-size:18px;width:200px;color:darkblue;" /></td>
+           				<tr><td style="color:blue;font-size:18px;">Account Number</td></tr>
+           				<tr><td><input type="text" id="accountNo" name="accountNo" onkeyup="eraseError(this)" maxlength="16" style="padding:1px 3px;font-size:18px;width:200px;color:darkblue;" /></td>
            					<td id="tdAccountNo" style="color:red"><span id="checkAno" onclick="checkAccountNo()">Check</span></td>
            				</tr>
-           				<tr><td><h4>Amount to be Withdrawn</h4></td></tr>
-           				<tr><td><input class ="form-control" type="text" id="withdrawAmount" name="withdrawAmount" onkeyup="eraseError(this)" style="padding:1px 3px;font-size:18px;width:200px;color:darkblue;" /></td>
+           				<tr><td style="color:blue;font-size:18px;">Amount to be Withdrawn</td></tr>
+           				<tr><td><input type="text" id="withdrawAmount" name="withdrawAmount" onkeyup="eraseError(this)" style="padding:1px 3px;font-size:18px;width:200px;color:darkblue;" /></td>
            					<td id="tdWithdrawAmount" style="color:red"></td>
            				</tr>
            			</table>
@@ -129,7 +123,9 @@
            		</div>
            </div>
 	</div>
-	</section>
-		<footer class="site-footer"> <jsp:include
-			page="../includes/footer.inc.jsp" /> &nbsp; </footer></body>
+	<div id="footer" class="Footer">
+            <%@include  file="../includes/footer.inc.jsp" %>
+            &nbsp;
+    </div>
+</body>
 </html>

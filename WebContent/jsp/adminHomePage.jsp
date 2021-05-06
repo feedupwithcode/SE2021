@@ -1,58 +1,85 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-</head>
-<jsp:include page="../includes/header.inc.jsp" />
-&nbsp;
-</head>
-<!-- MENU BAR -->
-<jsp:include page="../includes/adminMenu.inc.jsp" />
-&nbsp;
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<title>FIT Online Banking</title>
+		<style>
+		div.SideBarContainer
+{
+    border: 1px solid darkblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5px;
+    margin-left: 700px;
+    height:500px;
+    width:398px;
+    background-color:silver;
+}
+div.QuickLinksBoard
+{
+    margin-top:5px;
+    padding: 2px 0px 0px 20px;
+    margin-left:8px;
+    border-radius: 20px;
+    border: 1px solid cyan;
+    height:150px;
+    width:360px;
+    background-color:white;
+    box-shadow: 5px 5px 5px #000;
+}
+div.QuickLinksBoard,a
+{
+    text-decoration: none;
+}
 
-<section
-	class="banner banner-bg d-flex justify-content-center align-items-center">
-<div class="container">
-	<div class="row">
-
-		<div
-			class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
-			<div class="banner-text mx-auto" data-aos="fade-up" data-aos-delay="300" >
-			<h2 class="mb-4"><strong>Welcome to Admin</strong></h2>
-				<a href="${path}../jsp/adminHomePage.jsp" class="btn btn-outline-light  mb-4"
-					role="button">My Account</a> <a
-					href="${path}../jsp/openAccount.jsp"  class="btn btn-outline-light  mb-4"
-					role="button">Create new Account</a> <a
-					href="${path}../jsp/accountDetails.jsp" class="btn btn-outline-light  mb-4"
-					role="button">View Account Detail</a>
-				<a href="${path}../jsp/depositAmount.jsp" class="btn btn-outline-light  mb-4"
-					role="button">Deposit Amount</a> <a
-					href="${path}../jsp/withdrawAmount.jsp"  class="btn btn-outline-light  mb-4"
-					role="button">Withdraw Amount</a> <a
-					href="${path}../jsp/fundTransfer.jsp" class="btn btn-outline-light  mb-4"
-					role="button">Fund Transfer</a>
-				<a href="${path}../jsp/quickTranscaction.jsp" class="btn btn-outline-light  mb-4"
-					role="button">Quick view Transaction</a> 
-					
-					 
-
-
-
-			</div>
-		</div>
-
-		<div class="col-lg-6 col-12">
-			<div class="banner-image" data-aos="fade-up" data-aos-delay="300">
-
-				<img src="../images/banner.png" class="img-fluid" alt="banner">
-			</div>
-		</div>
-
-	</div>
-</div>
-</section>
-<footer class="site-footer"> <jsp:include
-	page="../includes/footer.inc.jsp" /> &nbsp; </footer>
+div.QuickLinksBoard a:hover
+{
+    text-decoration:underline; 
+    
+}
+		</style>
+	</head>
+<body>
+<div class="MainContainer">
+            <div class="HeaderContainer">
+                <%@include file="../includes/header.inc.jsp" %>
+                <div class="MenuContainer">
+                	<jsp:include page="../includes/adminMenu.inc.jsp" />
+	            </div>
+	            <jsp:include page="../includes/message.inc.jsp" />
+           </div>
+           <div class="MainBody">          
+           		<div class="LeftContainer" style="width:650px;height:500px">
+           			
+           			<div style="border-radius:10px;height:400px;width:650px;background-size:650px 400px;background-image: url('${path}/images/local_admin_rights.jpg');"></div>
+           		</div>
+               	
+               	<div class="SideBarContainer">
+                	<div class="QuickLinksBoard">
+                   	 <span style="color:red;font-size: 20px;margin-left: 120px">Quick Links</span>
+                    	<marquee height="110" onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="up" scrollamount="2"> 
+                        <a href="${path}/index.jsp" style="color:green;font-size:14px;">Goto Home Page</a><br>
+                        <a href="${path}/jsp/adminHomePage.jsp" style="color:green;font-size:14px;">My Account</a><br>
+                        <a href="${path}/jsp/openAccount.jsp" style="color:green;font-size:14px;">Create New Account</a><br>
+                        <a href="${path}/jsp/accountDetails.jsp" style="color:green;font-size:14px;">View Account Details</a><br>
+                        <a href="${path}/jsp/depositAmount.jsp" style="color:green;font-size:14px;">Deposit Amount</a><br>
+                        <a href="${path}/jsp/withdrawAmount.jsp" style="color:green;font-size:14px;">Withdraw Amount</a><br>
+                        <a href="${path}/jsp/fundTransfer.jsp" style="color:green;font-size:14px;">Fund Transfer</a><br>
+                        <a href="${path}/jsp/quickTransaction.jsp" style="color:green;font-size:14px;">View Quick Transaction</a><br>
+                        <a href="${path}/jsp/aboutUs.jsp" style="color:green;font-size:14px;">About FIT Online Bank</a><br>
+                    	</marquee>
+                	</div><br>
+                	<img style="border: 1px solid green;margin-left:8px" src="${path }/images/operator.png">
+            	</div>
+           </div>
+	</div><br><br>
+        <div id="footer" class="Footer">
+            <%@include  file="../includes/footer.inc.jsp" %>
+            &nbsp;
+        </div>  
 </body>
 </html>
